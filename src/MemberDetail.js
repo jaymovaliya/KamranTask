@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './MemberDetail.css'
 
 class MemberDetail extends Component {
     render() {
@@ -8,6 +9,7 @@ class MemberDetail extends Component {
             return (
                 <div className="App">
                     <h1>Member Details</h1>
+                    <img width="200px" height="200px" src={require('./trump.jpg')}/>
                     <h4><b>Name:</b>{` ${member.first_name} ${member.last_name}`}</h4>
                     <h4><b>Date of Birth:</b>{member.date_of_birth}</h4>
                     <h4><b>Gender:</b>{member.gender}</h4>

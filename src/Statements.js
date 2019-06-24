@@ -16,6 +16,7 @@ class Statements extends Component {
         if (this.state.member) {
             return (
                 <div className="App">
+                    <a href="/">Back</a>
                     <MemberDetail member={this.state.member}></MemberDetail>
                     <h1>statements Submitted by {` ${this.state.member.first_name}`}</h1>
                     <StatementDetail statements={this.state.statements}></StatementDetail>

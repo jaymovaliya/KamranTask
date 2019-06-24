@@ -16,6 +16,7 @@ class Votes extends Component {
         if (this.state.member) {
             return (
                 <div className="App">
+                    <a href="/">Back</a>
                     <MemberDetail member={this.state.member}></MemberDetail>
                     <h1>Votes Submitted by {` ${this.state.member.first_name}`}</h1>
                     <VoteDetail votes={this.state.votes}></VoteDetail>
